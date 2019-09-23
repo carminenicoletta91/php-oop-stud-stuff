@@ -1,7 +1,7 @@
 <?php
 trait FullName{
   public function PrintFullName(){
-    return $this -> name." ".$this -> lastname."<br>";
+    return $this -> name." ".$this -> lastname;
   }
 }
 
@@ -57,13 +57,13 @@ echo("PERSONA <br>");
 $utente1 = new Persona('Carlo','Marafioti','carlomarafioti@gmail.com');
 echo $utente1 -> toString()."<br>";
 echo("USO TRAIT FULLNAME <br>");
-echo $utente1 -> PrintFullName()."<br> ";
+echo $utente1 -> PrintFullName()."<br> <br>";
 
 echo("STUDENTE <br>");
 $Student1 = new Studente('Carlo','Marafioti','carlomarafioti@gmail.com','Ing.Civile',1450);
 echo $Student1 -> toString()."<br>";
 echo("USO TRAIT FULLNAME <br>");
-echo $Student1 ->PrintFullName()."<br>";
+echo $Student1 ->PrintFullName()."<br> <br>";
 
 echo("PROFESSORE <br>");
 $Professore = new Professore('Luca','Pirillo','lucapirillo@gmail.com','informatica',2240);
